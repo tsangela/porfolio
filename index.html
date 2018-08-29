@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Angela Tsang / tsangela">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto+Condensed" rel="stylesheet">
+
+    <title>p r o f i l e</title>
+</head>
+
+<body onload="setTimeout(hide, 1000, 'welcome-screen'); setTimeout(show, 2000, 'nav')" onkeyup="esc(event)">
+<div class="dark-screen"></div>
+<a href="https://tsangela.github.io/" target="_blank" class="credit">Theme by Angela Tsang.</a>
+<div id="welcome-screen">
+    <div class="dark-screen"></div>
+    <div id="welcome-text" class="center">{ w e l c <span style="color: red">o</span> m e }</div>
+    <div id="welcome-text2" class="center">
+        <span style="color: red">よ</span><br>
+        う<br>
+        こ<br>
+        そ
+    </div>
+</div>
+
+<div class="container-link center" id="nav">
+    <div class="link"
+         onclick="hide('nav'); show('welcome-screen'); setTimeout(hide, 2000, 'welcome-screen'); setTimeout(show, 3000, 'nav')">
+        home
+    </div>
+    <div class="link" onclick="hide('nav'); show('portfolio')" id="portfolio-link">portfolio</div>
+    <div class="link" onclick="hide('nav'); show('about')" id="about-link">about</div>
+    <div class="link" onclick="hide('nav'); show('contact')">contact</div>
+</div>
+
+<div class="container-portfolio center" id="portfolio">
+    <div class="container-x" onclick="hide('portfolio'); show('nav')">×</div>
+    <h1 class="header">Portfolio</h1>
+
+    <div class="nav-projects">
+        <a href="#p1">Project #1</a> ＊ <a href="#p2">Project #2</a> ＊ <a href="#p3">Project #3</a>
+    </div>
+
+    <div class="project-section">
+        <h2 id="p1">Project #1</h2>
+        <img src="images/image2.png" class="project-img">
+        <details>
+            <summary>Details</summary>
+            <div class="project-desc">
+                <h4>Programming Languages:</h4>
+                <p>HTML <span style="color: red">＊</span> CSS <span style="color: red">＊</span> JavaScript</p>
+                <h4>Description:</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique, mi in bibendum tincidunt,
+                    orci ante cursus ligula, sit amet rutrum ante lacus vel ante. Ut quis condimentum orci. Fusce
+                    lobortis
+                    auctor suscipit. Mauris viverra auctor augue, vel posuere velit vehicula in.</p>
+                <h4>Features:</h4>
+                <ul style="text-align: left;">
+                    <li>Vivamus sed tincidunt eros.</li>
+                    <li>Phasellus sapien purus, dignissim id lorem ac, eleifend condimentum est.</li>
+                    <li>Donec porttitor elit non tellus viverra, nec congue leo auctor.</li>
+                    <li>Pellentesque molestie hendrerit sodales.</li>
+                </ul>
+            </div>
+        </details>
+    </div>
+
+    <div class="project-section">
+        <h2 id="p2">Project #2</h2>
+        <img src="images/image3.png" class="project-img">
+        <details>
+            <summary>Details</summary>
+            <div class="project-desc">
+                <h4>Programming Languages:</h4>
+                <p>Java</p>
+                <h4>Description:</h4>
+                <p>Cras fringilla dui sit amet lobortis auctor. Ut ullamcorper odio nec tempus cursus. Donec dapibus
+                    efficitur nulla sed fringilla. Phasellus cursus, ante at vehicula interdum, neque enim finibus
+                    tellus, nec laoreet eros ipsum non turpis. Maecenas rhoncus a mauris nec fermentum. Aenean euismod
+                    nibh quis dolor feugiat consequat. In porttitor gravida enim eu euismod. Mauris augue est, blandit
+                    sed molestie at, convallis aliquam lacus.</p>
+                <h4>Features:</h4>
+                <ul style="text-align: left;">
+                    <li>Donec dapibus tellus in tellus iaculis, ut ultrices enim bibendum.</li>
+                    <li>Phasellus elit magna, volutpat a risus ut, aliquam venenatis quam.</li>
+                    <li>Quisque id ipsum fermentum.</li>
+                    <li>Eget ullamcorper nibh dictum quis.</li>
+                    <li>Quisque fermentum varius ultricies.</li>
+                </ul>
+            </div>
+        </details>
+    </div>
+
+    <div class="project-section">
+        <h2 id="p3">Project #3</h2>
+        <img src="images/image2.png" class="project-img">
+        <details>
+            <summary>Details</summary>
+            <div class="project-desc">
+                <h4>Programming Languages:</h4>
+                <p>C++</p>
+                <h4>Description:</h4>
+                <p>Proin imperdiet elit ut ornare dignissim. Integer urna tellus, lacinia vel sapien nec, iaculis
+                    vulputate ante. Etiam ipsum arcu, molestie et malesuada vulputate, egestas ut dui. Fusce tellus
+                    lacus, tincidunt cursus lorem et, ornare gravida metus. Vivamus varius non enim sit amet
+                    condimentum. Nullam facilisis orci at leo elementum sollicitudin. Nam at mattis ex. Nulla
+                    facilisi.</p>
+                <h4>Features:</h4>
+                <ul style="text-align: left;">
+                    <li>Nulla vel mi quis lacus ultricies faucibus.</li>
+                    <li>Maecenas porta maximus lorem, eget faucibus elit facilisis at.</li>
+                    <li>Aenean at blandit augue.</li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</div>
+
+
+<div class="container-about center" id="about">
+    <div class="container-x" onclick="hide('about'); show('nav');">×</div>
+    <img src="images/me.jpg" class="portrait">
+    <h1 class="header name">Your Name</h1>
+    <div class="container-desc">
+        <p style="text-align: center">🌸theme by <a href="https://tsangela.github.io/" target="_blank">tsangela</a> 🌸
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique, mi in bibendum tincidunt,
+            orci ante cursus ligula, sit amet rutrum ante lacus vel ante. Ut quis condimentum orci. Fusce lobortis
+            auctor suscipit. Mauris viverra auctor augue, vel posuere velit vehicula in. Vivamus sed tincidunt eros.
+            Phasellus sapien purus, dignissim id lorem ac, eleifend condimentum est. Pellentesque molestie hendrerit
+            sodales. Donec porttitor elit non tellus viverra, nec congue leo auctor.</p>
+        <p>
+            Maecenas aliquet eros in sem dignissim congue. Nulla iaculis, mauris quis convallis cursus, ipsum lorem
+            fermentum sapien, id facilisis lacus mauris id tellus. In ornare a felis sit amet pellentesque. Donec in
+            nisi in mauris faucibus interdum ac quis quam. Aliquam erat volutpat. Pellentesque ultrices, mauris ac
+            finibus consequat, nulla dolor hendrerit dui, ac accumsan est lacus a augue. Morbi vehicula eros a sem
+            faucibus, quis aliquet odio posuere.
+        </p>
+    </div>
+</div>
+
+<div class="container-contact center" id="contact">
+    <div class="container-x" onclick="hide('contact'); show('nav')">×</div>
+    <div class="header">Contact me</div>
+
+    <a href="#" target="_blank">
+        <img src="images/in.png" class="icon">
+    </a>
+    <a href="#" target="_blank">
+        <img src="images/email.png" class="icon">
+    </a>
+    <a href="#" target="_blank">
+        <img src="images/github.png" class="icon">
+    </a>
+    <a href="#" target="_blank">
+        <img src="images/ig.png" class="icon">
+    </a>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
